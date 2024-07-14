@@ -25,4 +25,4 @@ jobs:
       with:
         name: dev-artifact
     - name: Show dev.txt
-    - run: cat dev.txt
+      run: cat dev.txt
