@@ -9,4 +9,8 @@ jobs:
     runs-on: ubuntu-latest   # 어떤 기반을 사용할지 설정
     steps:                   # steps 설정
     - uses: actions/checkout@v4
-    - run: cat *
+      with:
+        repository: kor060722/github-action
+        token: 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
+        run: cat name.txt
+        
