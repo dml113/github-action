@@ -10,7 +10,7 @@ jobs:
     steps:                   # steps 설정
     - uses: actions/checkout@v4
       with:
-        repository: kor060722/github-action
+        repository: 'kor060722/github-action'
         token: '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'
         run: | 
           cat name.txt
