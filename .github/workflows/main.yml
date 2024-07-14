@@ -14,3 +14,15 @@ jobs:
       with:
         name: dev-artifact
         path: ./dev.txt
+        
+  dev-job-second:
+    name: dev-job-second
+    needs: dev-job-first
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: dev-artifact
+    - name: Show dev.txt
+    - run: cat dev.txt
