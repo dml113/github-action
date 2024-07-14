@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@v4
       with:
         repository: 'kor060722/github-action'
-        token: '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'
+        token: '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'
         run: | 
           cat name.txt
