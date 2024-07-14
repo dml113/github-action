@@ -8,6 +8,5 @@ jobs:
     name: dev-job-first      # job name 설정
     runs-on: ubuntu-latest   # 어떤 기반을 사용할지 설정
     steps:                   # steps 설정
-    - name: step 1
     - uses: actions/checkout@v4
     - run: cat README.md
