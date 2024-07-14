@@ -8,8 +8,9 @@ jobs:
     name: dev-job-first      # job name 설정
     runs-on: ubuntu-latest   # 어떤 기반을 사용할지 설정
     steps:                   # steps 설정
-    - uses: actions/checkout@v4
+    - name: Create a dev.txt
+      run: echo "dev file" > dev.txt
+    - uses: actions/upload-artifact@v4
       with:
-        repository: kor060722/github-action
-        token: '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'
-    - run: cat name.txt
+        name: dev-artifact
+        path: ./dev.txt
