@@ -19,7 +19,8 @@ jobs:
             
   dev-job-second:
     name: dev-job-second    
-    runs-on: ubuntu-latest   
+    runs-on: ubuntu-latest
+    needs: dev-job-first
     steps:                 
     - name: step 1
       run: |
